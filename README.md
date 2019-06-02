@@ -38,9 +38,9 @@ To get the same functionality under your account, you need to follow the steps b
 - Under *More options*->*Settings*  
     - Enable *Build only if .travis.yml is present*
     - Disable *Build pull requests*
-    - Define the GH_TOKEN variable under *Environment Variables* by setting its value to a GitHub Token that you can generate from GitHub in order to enable Travis to commit on your GitHub repository, it needs to commit on the *gh-pages* branch.
+    - *On Travis* define the GH_TOKEN variable under *Environment Variables* by setting its value to a GitHub Token that you can generate from GitHub in order to enable Travis to commit on your GitHub repository, it needs to commit on the *gh-pages* branch.
 To obtain that value, you need to go to *GitHub* and under *Settings* / *Developer settings* there is a *Personal access tokens* section. Use the *Generate new token* button to generate a token and enable the options under the *repo* category. Copy the token value and use it to define the value of the *GH_TOKEN* variable
-    - Define the WEBHELP_LICENSE variable under *Environment Variables* by setting its value to the oXygen Webhelp license key, eclosed in quotes - this will be used by the publishing process to build the webhelp output. You can obtain a trial license from 
+    - *On Travis* Define the WEBHELP_LICENSE variable under *Environment Variables* by setting its value to the oXygen Webhelp license key, eclosed in quotes - this will be used by the publishing process to build the webhelp output. You can obtain a trial license from 
 [http://oxygenxml.com/xml_webhelp/register.html](http://oxygenxml.com/xml_webhelp/register.html)  
 
 - You need to push some changes to GitHub on the *master* branch to force an initial build or force a build directly from Travis.
